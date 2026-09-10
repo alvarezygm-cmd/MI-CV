@@ -3,25 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Currículum interactivo y portafolio profesional de Yuleidy María Álvarez González - Gerente de Operaciones y Finanzas">
+    <meta name="description" content="Currículum interactivo de Yuleidy María Álvarez González">
     <title>YULEIDY MARÍA ÁLVAREZ GONZÁLEZ | Currículum Interactivo</title>
-    
-    <!-- Iconos profesionales oficiales (Única dependencia externa válida) -->
     <script src="https://cloudflare.com"></script>
-    
     <style>
-        /* ==========================================================================
-           VARIABLES Y CONFIGURACIÓN GENERAL (Paleta Negro, Blanco y Dorado)
-           ========================================================================== */
         :root {
-            --primary: #0a0a0a;       /* Negro Profundo */
-            --secondary: #1a1a1a;     /* Negro Claro */
-            --accent: #d4af37;        /* Dorado Metálico */
-            --accent-hover: #aa8c2c;  /* Dorado Oscuro */
-            --text-dark: #1e293b;     /* Texto Principal */
-            --text-light: #f8fafc;    /* Texto Claro */
-            --bg: #ffffff;            /* Blanco Puro */
-            --bg-light: #f4f4f5;      /* Gris Muy Claro */
+            --primary: #0a0a0a;
+            --secondary: #1a1a1a;
+            --accent: #d4af37;
+            --accent-hover: #aa8c2c;
+            --text-dark: #1e293b;
+            --text-light: #f8fafc;
+            --bg: #ffffff;
+            --bg-light: #f4f4f5;
             --card-bg: #ffffff;
         }
 
@@ -38,9 +32,6 @@
             line-height: 1.6;
         }
 
-        /* ==========================================================================
-           HEADER Y NAVEGACIÓN
-           ========================================================================== */
         header {
             background-color: var(--primary);
             color: var(--text-light);
@@ -49,7 +40,6 @@
             top: 0;
             z-index: 1000;
             border-bottom: 2px solid var(--accent);
-            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
         }
 
         nav {
@@ -64,7 +54,6 @@
             font-weight: 700;
             font-size: 1.3rem;
             letter-spacing: 1px;
-            color: var(--text-light);
         }
 
         .logo span {
@@ -82,32 +71,17 @@
             text-decoration: none;
             font-size: 0.95rem;
             font-weight: 500;
-            transition: color 0.3s;
         }
 
         .nav-links a:hover, .nav-links a.active {
             color: var(--accent);
         }
 
-        /* ==========================================================================
-           HERO SECTION (Presentación de Alto Impacto)
-           ========================================================================== */
         .hero {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: var(--text-light);
-            padding: 6rem 2rem;
+            padding: 5rem 2rem;
             text-align: center;
-            position: relative;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--accent);
         }
 
         .hero-container {
@@ -116,25 +90,23 @@
         }
 
         .hero h1 {
-            font-size: 2.6rem;
+            font-size: 2.4rem;
             margin-bottom: 0.5rem;
             font-weight: 800;
-            letter-spacing: -0.5px;
         }
 
         .hero h2 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             color: var(--accent);
             margin-bottom: 1.5rem;
-            font-weight: 400;
             text-transform: uppercase;
             letter-spacing: 1.5px;
         }
 
         .hero p {
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #d4d4d8;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             text-align: justify;
         }
 
@@ -143,174 +115,119 @@
             justify-content: center;
             gap: 1rem;
             flex-wrap: wrap;
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
         }
 
         .badge {
             background: rgba(255,255,255,0.07);
             border: 1px solid rgba(212, 175, 55, 0.3);
-            padding: 0.6rem 1.2rem;
+            padding: 0.5rem 1rem;
             border-radius: 4px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             color: var(--text-light);
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 0.6rem;
-            transition: all 0.3s;
-        }
-
-        .badge:hover {
-            background: rgba(212, 175, 55, 0.15);
-            border-color: var(--accent);
-            color: var(--accent);
-        }
-
-        /* Botón de Descarga PDF */
-        .cta-container {
-            margin-top: 1rem;
+            gap: 0.5rem;
         }
 
         .btn-download {
             background-color: transparent;
             color: var(--accent);
             border: 2px solid var(--accent);
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 600;
-            padding: 0.8rem 2.2rem;
+            padding: 0.7rem 2rem;
             border-radius: 4px;
             cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            transition: all 0.3s ease;
-            text-decoration: none;
         }
 
         .btn-download:hover {
             background-color: var(--accent);
             color: var(--primary);
-            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
-            transform: translateY(-2px);
         }
 
-        /* ==========================================================================
-           CONTENIDO PRINCIPAL Y SECCIONES
-           ========================================================================== */
         main {
             max-width: 1200px;
-            margin: 4rem auto;
+            margin: 3rem auto;
             padding: 0 2rem;
         }
 
         section {
-            margin-bottom: 5rem;
+            margin-bottom: 4rem;
             scroll-margin-top: 100px;
         }
 
         h3.section-title {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             color: var(--primary);
-            margin-bottom: 2rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
+            margin-bottom: 1.5rem;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
             border-bottom: 2px solid var(--bg-light);
             padding-bottom: 0.5rem;
         }
 
-        h3.section-title i {
-            color: var(--accent);
-        }
-
-        /* Bloques de Métricas Irrefutables */
         .metrics-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 1.5rem;
-            margin-bottom: 5rem;
+            margin-bottom: 4rem;
         }
 
         .metric-card {
             background: var(--bg-light);
-            padding: 2.5rem 2rem;
+            padding: 2rem 1.5rem;
             border-radius: 4px;
             text-align: center;
             border: 1px solid #e4e4e7;
             border-top: 4px solid var(--primary);
-            transition: all 0.3s;
-        }
-
-        .metric-card:hover {
-            border-top-color: var(--accent);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            transform: translateY(-3px);
         }
 
         .metric-val {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 800;
-            color: var(--primary);
-            margin-bottom: 0.25rem;
-        }
-
-        .metric-card:nth-child(1) .metric-val,
-        .metric-card:nth-child(2) .metric-val {
             color: var(--accent);
         }
 
         .metric-label {
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 700;
-            color: var(--primary);
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .metric-desc {
-            font-size: 0.88rem;
-            color: #71717a;
             margin-top: 0.5rem;
         }
 
-        /* Sección Competencias */
+        .metric-desc {
+            font-size: 0.85rem;
+            color: #71717a;
+            margin-top: 0.25rem;
+        }
+
         .skills-category {
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
 
         .skills-category h4 {
-            margin-bottom: 0.8rem;
+            margin-bottom: 0.5rem;
             color: #52525b;
-            font-size: 1.05rem;
+            font-size: 1rem;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
         }
 
         .skills-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.75rem;
+            gap: 0.5rem;
         }
 
         .skill-tag {
             background: var(--bg-light);
             color: var(--primary);
-            padding: 0.5rem 1rem;
+            padding: 0.4rem 0.8rem;
             border-radius: 4px;
-            font-size: 0.92rem;
-            font-weight: 500;
+            font-size: 0.85rem;
             border: 1px solid #e4e4e7;
-            transition: all 0.3s;
-        }
-
-        .skill-tag:hover {
-            background: var(--primary);
-            color: var(--text-light);
-            border-color: var(--primary);
         }
 
         .skill-tag.highlight {
@@ -320,30 +237,159 @@
             font-weight: 600;
         }
 
-        /* Filtros e Historial Laboral (Línea de tiempo) */
         .exp-filters {
             display: flex;
-            gap: 0.75rem;
-            margin-bottom: 2rem;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .filter-btn {
             background: var(--bg-light);
             border: 1px solid #e4e4e7;
-            padding: 0.6rem 1.2rem;
+            padding: 0.5rem 1rem;
             border-radius: 4px;
             cursor: pointer;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
-            transition: all 0.3s;
         }
 
-        .filter-btn.active, .filter-btn:hover { background: var(--primary);color: var(--text-light);border-color: var(--primary);}.timeline {position: relative;border-left: 2px solid #e4e4e7;padding-left: 2rem;}.timeline-item {position: relative;margin-bottom: 3rem;background: var(--card-bg);padding: 2rem;border-radius: 4px;border: 1px solid #e4e4e7;box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);transition: all 0.3s;}.timeline-item:hover {transform: translateX(5px);border-color: var(--accent);box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05);}.timeline-item::before {content: '';position: absolute;left: calc(-2rem - 7px);top: 32px;width: 12px;height: 12px;border-radius: 50%;background: var(--accent);border: 3px solid var(--bg);}.exp-header {display: flex;justify-content: space-between;align-items: flex-start;flex-wrap: wrap;margin-bottom: 1rem;gap: 1rem;}.role {font-size: 1.3rem;font-weight: 700;color: var(--primary);}.company {color: var(--accent);font-weight: 600;font-size: 1.05rem;margin-top: 0.25rem;}.duration {font-size: 0.85rem;background: var(--primary);padding: 0.3rem 0.8rem;border-radius: 4px;color: var(--text-light);font-weight: 600;letter-spacing: 0.5px;}.exp-body ul {list-style: none;}.exp-body li {position: relative;padding-left: 1.5rem;margin-bottom: 0.75rem;font-size: 1rem;color: #4b5563;text-align: justify;}.exp-body li::before {content: "■";position: absolute;left: 0;color: var(--accent);font-size: 0.7rem;top: 2px;}.highlight-text {font-weight: 700;color: var(--primary);background-color: #fef08a;padding: 1px 5px;border-radius: 2px;}/* Sección Formación */.edu-grid {display: grid;grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));gap: 1.5rem;}.edu-card {background: var(--card-bg);padding: 1.5rem;border-radius: 4px;border: 1px solid #e4e4e7;display: flex;gap: 1.25rem;align-items: center;transition: all 0.3s;}.edu-card:hover {border-color: var(--accent);background: var(--bg-light);}.edu-icon {background: var(--primary);color: var(--accent);width: 50px;height: 50px;border-radius: 4px;display: flex;align-items: center;justify-content: center;font-size: 1.3rem;flex-shrink: 0;}.edu-info h4 {font-size: 1.05rem;color: var(--primary);font-weight: 700;}.edu-info p {font-size: 0.9rem;color: #71717a;margin-top: 0.25rem;}/* Formulario de Contacto Corporativo */.contact-section {background: var(--primary);color: var(--text-light);padding: 3rem;border-radius: 4px;border-top: 4px solid var(--accent);max-width: 750px;margin: 0 auto;box-shadow: 0 20px 40px rgba(0,0,0,0.1);}.contact-section h3 {color: var(--text-light);text-align: center;margin-bottom: 2rem;text-transform: uppercase;letter-spacing: 1px;}.form-group {margin-bottom: 1.5rem;}.form-group label {display: block;margin-bottom: 0.5rem;font-weight: 500;color: #d4d4d8;font-size: 0.95rem;text-transform: uppercase;letter-spacing: 0.5px;}.form-control {width: 100%;padding: 0.85rem 1.2rem;background: #18181b;border: 1px solid #3f3f46;border-radius: 4px;font-size: 1rem;color: var(--text-light);transition: all 0.3s;}.form-control:focus {outline: none;border-color: var(--accent);background: #27272a;}.btn-submit {background: var(--accent);color: var(--primary);font-size: 1rem;font-weight: 700;padding: 0.9rem 2rem;border: none;border-radius: 4px;cursor: pointer;width: 100%;text-transform: uppercase;letter-spacing: 1px;transition: background 0.3s;}.btn-submit:hover {background: var(--accent-hover);}.form-message {margin-top: 1.5rem;padding: 1rem;border-radius: 4px;display: none;font-weight: 600;text-align: center;}.form-message.success {background: #16a34a;color: white;display: block;}/* Footer */footer {background: var(--primary);color: #71717a;text-align: center;padding: 2.5rem;margin-top: 6rem;font-size: 0.9rem;border-top: 1px solid #27272a;}/* Adaptabilidad Móvil (Responsive) */@media (max-width: 768px) {.hero h1 { font-size: 2rem; }.exp-header { flex-direction: column; gap: 0.5rem; }.duration { align-self: flex-start; }nav { flex-direction: column; gap: 1.2rem; }.contact-section { padding: 2rem 1.5rem; }}YA| Operations & FinancePerfilCompetenciasExperienciaFormaciónContacto Logros Métricos Irrefutables-95%Errores de ComunicaciónReducción drástica y eliminación de descuadres logísticos en Posada La Rosaleda mediante sistemas automatizados.0%Margen de ErrorLogrado de forma sólida en cierres de caja consolidados en La Guaira Hotel Boutique.98%Satisfacción de UsuarioAlcanzado al centralizar sistemas de registro digital y erradicar quejas operativas.5+ AñosExperiencia LíderEn control financiero interno, gestión de back-office, inventarios y dirección de equipos.© 2026 Yuleidy María Álvarez González. Todos los derechos reservados. Diseñado con enfoque de gobernanza y eficiencia operativa.// Filtros Interactivos de la Sección Experienciafunction filterExp(category) {const buttons = document.querySelectorAll('.filter-btn');buttons.forEach(btn => btn.classList.remove('active'));event.target.classList.add('active');const items = document.querySelectorAll('.timeline-item');items.forEach(item => {if (category === 'all' || item.getAttribute('data-cat') === category) {item.style.display = 'block';} else {item.style.display = 'none';}});}// Iluminación dinámica del menú de navegación según el scroll de pantallawindow.addEventListener('scroll', () => {let current = '';const sections = document.querySelectorAll('section');const navLinks = document.querySelectorAll('.nav-links a');sections.forEach(section => {const sectionTop = section.offsetTop;if (pageYOffset >= sectionTop - 120) {current = section.getAttribute('id');}});navLinks.forEach(a => {a.classList.remove('active');if (a.getAttribute('href').includes(current)) {a.classList.add('active');}});});// Simulación controlada del envío del formulario de contactofunction handleFormSubmit(event) {event.preventDefault();const responseDiv = document.getElementById('formResponse');responseDiv.style.display = 'block';responseDiv.className = 'form-message success';responseDiv.innerHTML = ' ¡Mensaje enviado con éxito! Recibirá respuesta a la brevedad.';document.getElementById('interactiveForm').reset();}// Acción asociada al botón de descarga del archivo PDF de Currículumfunction triggerDownload() {alert('¡Enlace estructurado! Para habilitar la descarga directa de tu documento real, sube tu CV original en formato PDF a Google Drive (en modo público para lectura), copia su enlace y reemplaza esta alerta por la acción: window.open("TU_ENLACE_DE_DRIVE");');}// Acción asociada al botón de descarga del archivo PDF de Currículum
-        function triggerDownload() {
-            alert('¡Enlace estructurado! Para habilitar la descarga directa de tu documento real, sube tu CV original en formato PDF a Google Drive (en modo público para lectura), copia su enlace y reemplaza esta alerta por la acción: window.open("TU_ENLACE_DE_DRIVE");');
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary);
+            color: var(--text-light);
         }
-    </script>
-</body>
-</html>
+
+        .timeline {
+            border-left: 2px solid #e4e4e7;
+            padding-left: 1.5rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 4px;
+            border: 1px solid #e4e4e7;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: calc(-1.5rem - 7px);
+            top: 24px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--accent);
+            border: 3px solid var(--bg);
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .role {
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+
+        .company {
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        .duration {
+            font-size: 0.8rem;
+            background: var(--primary);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            color: var(--text-light);
+        }
+
+        .exp-body ul {
+            list-style: none;
+        }
+
+        .exp-body li {
+            position: relative;
+            padding-left: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+
+        .exp-body li::before {
+            content: "■";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 0.6rem;
+            top: 2px;
+        }
+
+        .highlight-text {
+            font-weight: 700;
+            background-color: #fef08a;
+            padding: 1px 4px;
+        }
+
+        .edu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .edu-card {
+            padding: 1.5rem;
+            border-radius: 4px;
+            border: 1px solid #e4e4e7;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .edu-icon {
+            background: var(--primary);
+            color: var(--accent);
+            width: 45px;
+            height: 45px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .contact-section {
+            background: var(--primary);
+            color: var(--text-light);
+            padding: 2.5rem;
+            border-radius: 4px;
+            border-top: 4px solid var(--accent);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.8rem;
+            background: #18181b;
+            border: 1px solid #3f3f46;
+            border-radius: 4px;
